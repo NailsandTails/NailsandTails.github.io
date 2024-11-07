@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!-- 
+Student Name: Kevin Sclafani
+File Name: contact.html
+Date: 08.31.2024
+-->
+<html lang="en">
+    <head>
+        <title>Contact Us | Nail's &amp; Tail's Dog Grooming</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/styles.min.css">
+        <meta name="viewport" content="width=device-width initial-scale=1">
+        <meta name="description" content="Contact us today to schedule your first appointment.">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Raleway&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="icon" type="image/png" href="images/favicon-32.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    </head>
+    <body>
+        <div id="container">
+
+            <!-- Mobile Nav -->
+			<nav class="mobile-nav">
+				<div id="menu-links">
+					<a href="index.html">Home</a>
+					<a href="groomers.html">Groomers</a>
+					<a href="services.html">Services</a>
+					<a href="contact.html">Contact Us</a>
+				</div>
+				<a class="menu-icon" onclick="hamburger()">
+					<div>
+						&#9776;
+					</div>
+				</a>
+            </nav>
+            <header id="dog-logo">
+                <a href="index.html"><img src="images/Nail's and Tails Logo_v2.png" alt="single dog looking toward you"></a>
+            </header>
+            <nav class="tab-desk">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="groomers.html">Groomers</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li class="active"><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <!-- Use the main element for the main content of the website. -->
+            <main>
+                <div id="contact">
+                    <h4>Ready to get your little furry family member groomed? Contact us today!</h4>
+                    <h4 class="mobile tel-link"><a href="tel:8675309">867-5309</a></h4>
+					<h4 class="tab-desk tel-num">867-5309</h4>
+                    <p>Email us: <a href="mailto:support@nailsandtails.com" class="email-link">support@nailsandtails.com</a></p>
+                    <h6>Visit us at: 2535 Lanier Tech Dr, Gainesville, GA 30507</h6>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3294.76958968291!2d-83.7782821!3d34.3308868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5f3c81e569ee1%3A0xd59419defd823e3d!2sLanier%20Technical%20College!5e0!3m2!1sen!2sus!4v1726440395366!5m2!1sen!2sus" allowfullscreen="" class="map"></iframe>
+
+                    <!-- Contact Form Starts Here -->
+                    <form action="submit_form.html" method="post">
+                        <!-- Personal Information Fieldset -->
+                        <fieldset>
+                            <legend>Personal Information</legend>
+
+                            <label for="name">Full Name:</label>
+                            <input type="text" id="name" name="fullname" placeholder="Enter your full name" required>
+
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" name="phone" placeholder="123-456-7890">
+                        </fieldset>
+
+                        <!-- Pet Information Fieldset -->
+                        <fieldset>
+                            <legend>Pet Information</legend>
+
+                            <label for="pet-name">Pet's Name:</label>
+                            <input type="text" id="pet-name" name="petname" placeholder="Enter your pet's name" required>
+
+                            <label for="service">Select Service:</label>
+                            <select id="service" name="service">
+                                <option value="basic">Basic Grooming</option>
+                                <option value="premium">Premium Grooming</option>
+                                <option value="deluxe">Deluxe Grooming</option>
+                                <option value="bath-only">Bath Only</option>
+                                <option value="nail-trim">Nail Trim Only</option>
+                                <option value="teeth">Teeth Cleaning</option>
+                            </select>
+
+                            <label for="message">Additional Comments:</label>
+                            <textarea id="message" name="message" placeholder="Any special instructions or comments"></textarea>
+                        </fieldset>
+
+                        <!-- Submit Button -->
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </main>
+        </div>
+        <footer>
+            <div class="copyright">
+                <p>&copy; Copyright 2024. All rights reserved.</p>
+                <p>Contact Us: <a href="mailto:support@nailsandtails.com">support@nailsandtails.com</a></p>
+            </div>
+
+            <div class="social">
+                <a href="www.facebook.com/" target="_blank"><img src="images/facebook-logo.png" alt="facebook logo"></a>
+                <a href="www.twitter.com/" target="_blank"><img src="images/twitter-logo.png" alt="twitter logo"></a>
+            </div>
+        </footer>
+        <script src="scripts/scripts.js"></script>
+    </body>
+</html>

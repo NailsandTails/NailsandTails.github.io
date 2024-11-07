@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!-- 
+Student Name: Kevin Sclafani
+File Name: services.html
+Date: 08.31.2024
+-->
+<html lang="en">
+    <head>
+        <title>Services We Offer | Nail's &amp; Tail's Dog Grooming</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/styles.min.css">
+        <meta name="viewport" content="width=device-width initial-scale=1">
+        <meta name="description" content="View the wide range of services we offer for you and your little furry friends.">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Raleway&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="icon" type="image/png" href="images/favicon-32.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    </head>
+    <body>
+        <div id="container">
+
+            <!-- Mobile Nav -->
+			<nav class="mobile-nav">
+				<div id="menu-links">
+					<a href="index.html">Home</a>
+					<a href="groomers.html">Groomers</a>
+					<a href="services.html">Services</a>
+					<a href="contact.html">Contact Us</a>
+				</div>
+				<a class="menu-icon" onclick="hamburger()">
+					<div>
+						&#9776;
+					</div>
+				</a>
+            </nav>
+            <header id="dog-logo">
+                <a href="index.html"><img src="images/Nail's and Tails Logo_v2.png" alt="single dog looking toward you"></a>
+            </header>
+            <nav class="tab-desk">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="groomers.html">Groomers</a></li>
+                    <li class="active"><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <!-- Use the main element for the main content of the website. -->
+            <main>
+                <section id="services">
+                    <img src="images/Dog in tub.png" class="round" alt="dog in a bath being rinsed">
+                    <h2 class="mobile">Services:</h2>
+                    <ul class="mobile">
+                        <li>Baths and showers</li>
+                        <li>Nail trimming</li>
+                        <li>Shampoo and conditioner</li>
+                        <li>Dental cleaning</li>
+                        <li>Grooming for specific breeds</li>
+                        <li>And much much more.</li>
+                    </ul>
+                </section>
+
+                <section id="pricing">
+                    <img src="images/Puppy with bow.png" class="round" alt="puppy with bow on head looking at you">
+                    <h2 class="mobile">Package Prices:</h2>
+                    <ul class="mobile">
+                        <li>Basic grooming package: $25.00</li>
+                        <li>Premium grooming package: $35.00</li>
+                        <li>Deluxe grooming package: $45.00</li>
+                        <li>Bath Only: Shampoo, Blow Dry - $15.00</li>
+                        <li>Nail Trim Only: Trim and File - $10.00</li>
+                        <li>Teeth Cleaning: Oral Hygiene and Cleaning - $20.00</li>
+                    </ul>
+                    
+                    <h6 class="mobile">For more information about our grooming packages or to schedule an appointment, please visit the <a href="contact.html">contact us</a> page.</h6>
+                </section>
+
+                <!-- Table section starts here -->
+                <section id="table" class="tab-desk">
+                    <h1>Pricing Details</h1>
+                    <p>The following lists details what each package includes:</p>
+
+                    <!-- Table for desktop view -->
+                    <table class="tab-desk">
+                        <tr>
+                            <th>Package</th>
+                            <th>Services Included</th>
+                            <th>Price</th>
+                        </tr>
+                        <tr>
+                            <td>Basic</td>
+                            <td>Bath, Nail Trim, Ear Cleaning, Sanitary Trim</td>
+                            <td>$25.00</td>
+                        </tr>
+                        <tr>
+                            <td>Premium</td>
+                            <td>Basic Services + Customized Haircut, Conditioning</td>
+                            <td>$35.00</td>
+                        </tr>
+                        <tr>
+                            <td>Deluxe</td>
+                            <td>Premium Services + Teeth Cleaning, Paw Treatment</td>
+                            <td>$45.00</td>
+                        </tr>
+                        <tr>
+                            <td>Bath Only</td>
+                            <td>Shampoo, Blow Dry</td>
+                            <td>$15.00</td>
+                        </tr>
+                        <tr>
+                            <td>Nail Trim Only</td>
+                            <td>Trim and File</td>
+                            <td>$10.00</td>
+                        </tr>
+                        <tr>
+                            <td>Teeth Cleaning</td>
+                            <td>Oral Hygiene and Cleaning</td>
+                            <td>$20.00</td>
+                        </tr>
+                    </table>
+
+                    <!-- List for mobile view -->
+                    <div class="mobile">
+                        <ul>
+                            <li>Basic Package: Bath, Nail Trim, Ear Cleaning, Sanitary Trim - $25.00</li>
+                            <li>Premium Package: Basic Services + Customized Haircut, Conditioning - $35.00</li>
+                            <li>Deluxe Package: Premium Services + Teeth Cleaning, Paw Treatment - $45.00</li>
+                            <li>Bath Only: Shampoo, Blow Dry - $15.00</li>
+                            <li>Nail Trim Only: Trim and File - $10.00</li>
+                            <li>Teeth Cleaning: Oral Hygiene and Cleaning - $20.00</li>
+                        </ul>
+                    </div>
+                </section>
+                <div id="info_2" class="tab-desk">
+                    <h4 class="tab-desk">For more information about our grooming packages or to schedule an appointment, please visit the <a href="contact.html">contact us</a> page.</h4>
+                </div>
+                <section id="packages" class="tab-desk">
+                    <h1>Package Details</h1>
+                    <p>The following lists details what each package includes: </p>
+                    <dl>
+                        <dt>Basic</dt>
+                        <dd>The perfect choice for routine care and maintenance to keep your dog looking and feeling their best. Our basic grooming package includes a thorough bath using high-quality, gentle shampoos, followed by a blow-dry and brush-out to remove loose hair and tangles. We also provide ear cleaning, nail trimming, and a sanitary trim to ensure your pet stays clean and comfortable between grooming sessions.</dd>
+
+                        <dt>Premium</dt>
+                        <dd>Our premium grooming package offers everything in the basic package, with a few extra touches for dogs who need a little more pampering. This package includes a customized haircut to match your dog's breed or your personal preference, along with conditioning treatments to leave their coat shiny and soft. We finish with a spritz of dog-safe cologne and a cute accessory like a bow or bandana for that extra flair.</dd>
+
+                        <dt>Deluxe</dt>
+                        <dd>Treat your dog to the ultimate spa experience with our deluxe grooming package. In addition to all the services in the premium package, we include a deep-cleaning exfoliating bath, a teeth cleaning to maintain oral hygiene, and a relaxing paw pad treatment to soothe and protect your pet's paws. Your dog will leave feeling refreshed, pampered, and ready to show off their new look!</dd>
+                    </dl>
+                </section>
+            </main>
+        </div>
+            <!-- Use the footer area to add static footer content. -->
+        <footer>
+            <div class="copyright">
+                <p>&copy; Copyright 2024. All rights reserved.</p>
+                <p>Contact Us: <a href="mailto:support@nailsandtails.com">support@nailsandtails.com</a></p>
+            </div>
+
+            <div class="social">
+                <a href="www.facebook.com/" target="_blank"><img src="images/facebook-logo.png" alt="facebook logo"></a>
+                <a href="www.twitter.com/" target="_blank"><img src="images/twitter-logo.png" alt="twitter logo"></a>
+            </div>
+        </footer>
+        <script src="scripts/scripts.js"></script>
+    </body>
+</html>

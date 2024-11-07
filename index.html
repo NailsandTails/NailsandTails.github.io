@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- 
+Student Name: Kevin Sclafani
+File Name: index.html
+Date: 08.31.2024
+-->
+<html lang="en">
+    <head>
+        <title>Welcome Page | Nail's &amp; Tail's Dog Grooming</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/styles.min.css">
+        <meta name="viewport" content="width=device-width initial-scale=1">
+        <meta name="description" content="Welcome to Nail's &amp; Tail's Dog Grooming, we offers all sorts of packages and services for your furry little family memebers.">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Raleway&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="icon" type="image/png" href="images/favicon-32.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+
+
+    </head>
+    <body>
+        <div id="container">
+
+            <!-- Mobile Nav -->
+			<nav class="mobile-nav">
+				<div id="menu-links">
+					<a href="index.html">Home</a>
+					<a href="groomers.html">Groomers</a>
+					<a href="services.html">Services</a>
+					<a href="contact.html">Contact Us</a>
+				</div>
+				<a class="menu-icon" onclick="hamburger()">
+					<div>
+						&#9776;
+					</div>
+				</a>
+            </nav>
+            <header id="dog-logo">
+                <a href="index.html"><img src="images/Nail's and Tails Logo_v2.png" alt="single dog looking toward you"></a>
+            </header>
+            <nav class="tab-desk">
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="groomers.html">Groomers</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <!-- Use the main element for the main content of the website. -->
+            <main>
+                <div id="welcome" class="tab-desk">                  
+                    <h5>At Nail's and Tail's Dog Grooming, our mission is to provide exceptional grooming services that prioritize the comfort, health, and happiness of every dog we care for. We are committed to creating a safe and welcoming environment where pets are treated with the utmost respect and kindness. Our skilled team of groomers is dedicated to enhancing each dog's well-being through gentle, professional grooming that brings out their natural beauty. We strive to build lasting relationships with pet owners by delivering personalized service and ensuring every visit is a positive experience for both pets and their families.</h5>
+
+                    <video controls>
+                        <source src="media/groom.mp4" type="video/mp4">
+                        <source src="media/groom.webm" type="video/webm">
+                        <track src="media/captions.vtt" kind="captions" srclang="en" label="Captions">
+                        <track src="media/descriptions.vtt" kind="descriptions" srclang="en" label="Descriptions">
+                        <p>Your browser does not support the video format</p>
+                    </video>
+                    
+                </div>
+                <div id="intro">
+                    <h2>Welcome to Nail's &amp; Tail's Dog Grooming</h2>
+                    <div id="hero">
+                        <img src="images/Dog Hero Image.png" alt="dog looking at you with grooming supplies on table">
+                    </div>
+                    <p class="mobile">Does your furry little friend need a spa day? Then you have come to the right place. Contact us today to schedule your first appointment and get 25% off all services.</p>
+                    <p class="mobile">Our facilities offer a family friendly enviroment for all dogs. We focus on building lasting relationships with both dogs and owners, while delivering high-quality service with every visit.</p>
+                </div>
+            </main>
+        </div>
+
+        <footer>
+            <div class="copyright">
+                <p>&copy; Copyright 2024. All rights reserved.</p>
+                <p>Contact Us: <a href="mailto:support@nailsandtails.com">support@nailsandtails.com</a></p>
+            </div>
+
+            <div class="social">
+                <a href="www.facebook.com/" target="_blank"><img src="images/facebook-logo.png" alt="facebook logo"></a>
+                <a href="www.twitter.com/" target="_blank"><img src="images/twitter-logo.png" alt="twitter logo"></a>
+            </div>
+        </footer>
+        <script src="scripts/scripts.js"></script>
+    </body>
+</html>

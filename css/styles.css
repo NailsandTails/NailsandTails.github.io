@@ -1,0 +1,597 @@
+/* 
+Student Name: Kevin Sclafani
+File Name: styles.css
+Date: 09.21.2024
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, form, input, button, select, textarea, fieldset, section, article, aside, figure, figcaption, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules for images */
+img, video {
+    max-width: 100%;
+    display: block;
+}
+
+.tab-desk, #menu-links {
+    display: none;
+}
+.mobile {
+    display: block;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Style rules for body content */
+body {
+    background-color: #c8d1d0;
+    color: #061a2e;
+}
+
+/* 
+General styles for form elements 
+*/
+form {
+    width: 100%;
+    margin-top: 20px;
+}
+
+fieldset {
+    border: 2px solid #061a2e;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: #061a2e;
+}
+
+label {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #061a2e;
+    border-radius: 4px;
+    font-size: 1em;
+    background-color: #66e1ce;
+}
+
+textarea {
+    height: 100px;
+    background-color: #66e1ce;
+}
+
+input[type="submit"] {
+    background-color: #061a2e;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+input[type="submit"]:hover {
+    background-color: #66e1ce;
+}
+
+/* Style rules for hamburger menu */
+
+.mobile-nav a {
+    color: #061a2e;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+    margin-right: auto;
+}
+
+.mobile-nav a.menu-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+/* Hide hamburger menu and mobile nav on tablet and desktop viewports */
+@media screen and (min-width: 561px) {
+    .menu-icon, .mobile-nav {
+        display: none;
+    }
+}
+
+/* Mobile View (max-width: 560px) - Smaller font size, and padding for form elements */
+@media screen and (max-width: 560px) {
+form {
+    width: 100%;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], select, textarea {
+    font-size: 0.85em;
+    padding: 8px;
+}
+
+input[type="submit"] {
+    font-size: 0.9em;
+    padding: 10px 15px;
+}
+
+label {
+    font-size: 0.85em;
+}
+
+fieldset {
+    padding: 15px;
+}
+
+nav {
+    display: none;
+}
+nav ul {
+    display: none;
+}
+}
+
+/* Tablet View (min-width: 561px and max-width: 1014px) - Slightly larger font and padding for better readability */
+@media screen and (min-width: 561px) and (max-width: 1014px) {
+form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], select, textarea {
+    font-size: 1em;
+    padding: 10px;
+}
+
+input[type="submit"] {
+    font-size: 1em;
+    padding: 12px 20px;
+}
+
+fieldset {
+    padding: 20px;
+}
+
+label {
+    font-size: 1em;
+}
+.tel-link, .tel-link a {
+    display: none;
+}
+}
+
+/* Desktop View (min-width: 1015px) - Larger font and more padding for comfortable readability */
+@media screen and (min-width: 1015px) {
+form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], select, textarea {
+    font-size: 1.1em;
+    padding: 12px;
+}
+
+input[type="submit"] {
+    font-size: 1.1em;
+    padding: 14px 25px;
+}
+
+fieldset {
+    padding: 25px;
+}
+
+label {
+    font-size: 1.1em;
+}
+}
+
+/* Styles for Desktop viewport */
+.tab-desk {
+    display: block;
+}
+
+.frame {
+    position: relative;
+    max-width: 450px;
+    margin: 2% auto;
+}
+
+.pic-text {
+    position: absolute;
+    bottom: 2%;
+    background-color: rgb(0, 0, 0, 0.5);
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font: 1.5em;
+    font-weight: bold;
+    text-shadow: 5px 5px 8px #061a2e;
+}
+
+/* Style rules for the Header/Nav */
+.active, li:hover {
+    background-color: #66e1ce;
+    border-radius: 3px;
+}
+
+/* Style rules for header content */
+header {
+    flex: 1;
+    width: 100%;
+    float: left;
+}
+
+/* Style rules for navigation area */
+nav {
+    display: block;
+    padding: 1%;
+    margin-bottom: 1%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+nav li {
+    text-align: center;
+    display: block;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.75em;
+}
+
+nav li a {
+    display: inline-block;
+    color: #061a2e;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+/* Style rules for main content area */
+main {
+    clear: left;
+    background-color: #c8d1d0;
+    padding: 2%;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.25em;
+}
+
+#hero img {
+    border: #061a2e solid 2.5px;
+    margin: 2% auto;
+}
+
+#welcome h4 {
+    border-top: #061a2e solid 2px;
+    border-bottom: #061a2e solid 2px;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: justify;
+    padding-bottom:.25em;
+    margin-bottom: .5em;
+}
+
+#intro {
+    font-size: 0.55em;
+    text-align: center;
+    padding: 2%;
+}
+
+#intro p {
+    font-size: 2em;
+    padding-bottom:.5em;
+    text-align: justify;
+}
+
+#services, #pricing {
+    width: 80%;
+    margin: 2% auto;
+    padding-bottom: 3em;
+    text-align: center;
+}
+
+#services ul, #pricing ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 1.5%;
+}
+
+#services li, #pricing li {
+    padding-bottom: .5%;
+}
+
+#services img {
+    border: #061a2e 2px solid;
+}
+
+#pricing img {
+    border: #061a2e 2px solid;
+}
+
+#packages {
+    clear: right;
+    background-color: #c8d1d0;
+    padding-bottom: 1.1em;
+    padding-top: 1.5%;
+}
+
+#packages h1 {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: left;
+    padding-bottom: .25em;
+}
+
+#packages p {
+    padding-bottom: 1em;
+    font-weight: bold;
+}
+
+#packages dt {
+    font-weight: bold;
+}
+
+#packages dd {
+    padding: 0.5% 1% 2% 0;
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact p {
+    font-weight: bold;
+}
+
+#contact h6 {
+    color: #061a2e;
+    margin: 4% auto;
+    font-size: 1.0em;
+    font-weight: bold;
+}
+
+.tel-link {
+    background-color: #061a2e;
+    padding: 2%;
+    margin: 3% auto;
+    width:70%;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.tel-link a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
+}
+
+.map {
+    width: 95%;
+    height: 50%;
+    border: 6px solid #061a2e;
+}
+
+.round {
+    border-radius: 5%;
+}
+
+/* Style rules for footer content */
+footer .copyright {
+    font-size: 0.75em;
+    text-align: center;
+    color: #061a2e;
+    padding: 2% 4%;
+    float: left;
+    width: 75%;
+}
+
+footer p a {
+    color: #061a2e;
+    text-decoration: none;
+}
+
+.social {
+    float: right;
+    width: 20%;
+    padding: 2%;
+}
+
+.social img {
+    display: inline-block;
+    padding: 5%;
+}
+
+
+/* 
+Table Styling
+*/
+
+/* General table styles for all viewports */
+table {
+    width: 55%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #061a2e;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Alternating row colors */
+table tr:nth-child(even) {
+    background-color: #c8d1d0;
+}
+
+table tr:nth-child(odd) {
+    background-color: #66e1ce;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 560px), print {
+/* Tab Viewport: Show/hide tab-desktop class and mobile */
+.tab-desk {
+    display: block;
+}
+.mobile {
+    display: none;
+}
+/* Tablet Viewport: Style rule for header */
+header {
+    width: 30%;
+    padding-bottom: 2%;
+}
+/* Tablet Viewport: Style rule for nav area */
+nav li {
+    border-top: none;
+    display: inline-block;
+    border-right: 1px solid #061a2e;
+}
+nav li:last-child {
+    border-right: none;
+}
+nav li a {
+    padding: 0.1em 0.75em;
+}
+/* Tablet Viewport: Style rule for main content area */
+main ul {
+    margin: 0 0 4% 10%;
+}
+#packages {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    background: linear-gradient(to bottom, #c8d1d0, #66e1ce);
+    background-color: #f2f2f2;
+    padding: 1% 2%;
+}
+#services, #pricing {
+    width: 45%;
+    float: left;
+    margin: 1% 2%;
+}
+#info_2 h4 {
+    text-align: center;
+    padding-bottom: 3%;
+}
+.tel-num {
+    font-size: 1.25em;
+}
+.map {
+    height: 450px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    grid-column: 1 / span 2;
+}
+.pic-text {
+    font-size: 1em;
+    padding: 4px;
+    text-shadow: 5px 5px 8px #061a2e;
+}
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1015px), print {
+/* Desktop viewport: style rule for header */
+header {
+    width: 25%;
+    float: left;
+    padding-bottom: 0;
+}
+
+/* Desktop Viewport: Style rule for nav area */
+nav {
+    float: right;
+    width: 70%;
+    margin: 4em 1em 0 0;
+}
+nav ul {
+    text-align: right;
+}
+nav li {
+    border-top: none;
+    display: inline-block;
+    border-right: 1px solid #061a2e;
+}
+nav li a {
+    padding: 0.5em 1em;
+}
+.active ul li:hover{
+    background-color: #66e1ce;
+    border-radius: 3px;
+}
+#services, #pricing {
+    width: 45%;
+    float: left;
+    margin: 1% 2%;
+}
+#info_2 h4 {
+    text-align: center;
+    padding-bottom: 3%;
+}
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+    grid-column: 1 / span 4;
+}
+.pic-text {
+    font-size: 1em;
+    padding: 8px;
+    text-shadow: 5px 5px 8px #061a2e;
+}
+}
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px) {
+#container {
+    width: 1920px;
+    margin: 0 auto;
+}
+}
+
+/* Media Query for Print */
+@media print {
+body {
+    background-color: #fff;
+    color: #000;
+}
+}
+
+/* Keyframe Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Apply Animation */
+.menu-icon {
+    animation: fadeIn 2s ease-in;
+}
