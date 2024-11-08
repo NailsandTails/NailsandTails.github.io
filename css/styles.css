@@ -117,6 +117,9 @@ input[type="submit"]:hover {
 
 /* Mobile View (max-width: 560px) - Smaller font size, and padding for form elements */
 @media screen and (max-width: 560px) {
+table {
+    display: none;
+}
 form {
     width: 100%;
 }
